@@ -22,6 +22,7 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   padding: 15px;
   display: flex;
+  /* missing the gap */
 }
 
 .icon {
@@ -40,6 +41,7 @@ body {
 .left {
   /* padding to the right is 15px to match the padding of the modal */
   padding-right: 15px;
+  /* instead of doing this I could have just edited the .icon class and added flex-shrink */
 }
 
 .close-button {
@@ -79,4 +81,6 @@ button.cancel {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  /* forgot to add font-weight cause I removed the <h3> from the html file */
+  /* forgot to add margin-bottom */
 }
