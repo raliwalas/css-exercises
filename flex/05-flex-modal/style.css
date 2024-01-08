@@ -20,6 +20,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 15px;
+  display: flex;
 }
 
 .icon {
@@ -33,6 +35,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.left {
+  /* padding to the right is 15px to match the padding of the modal */
+  padding-right: 15px;
 }
 
 .close-button {
@@ -66,4 +73,10 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
