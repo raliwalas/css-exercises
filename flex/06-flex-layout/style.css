@@ -31,6 +31,8 @@ input {
 
 ul {
   list-style-type: none;
+  /* instead of the left and right link classes
+    I could have made the ul flex and adding gap here */
 }
 
 a {
@@ -56,9 +58,16 @@ a {
 }
 
 .content {
-  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  /* forgot to make content completely center on both axis */
+  align-items: center;
+  justify-content: center;
+  gap: 16px
 }
 
-.buttons {
+/* .buttons {
   padding: 15px;
-}
+} */
